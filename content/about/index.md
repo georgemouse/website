@@ -7,11 +7,10 @@ summary: "about"
 
 # About Me
 
-Hi, I'm **Your Name**. Welcome to my personal site.
+Hi, I'm ShiShiun. Welcome to my personal site.
 
-I'm a [your role/profession] based in [your location]. I write about [topics you cover].
+I'm a software engineer based in Taiwan. I write about life reflections and interested technical topics.
 
 ## Links
 
-- GitHub: [yourusername](https://github.com/yourusername)
-- Email: your@email.com
+- GitHub: [georgemouse](https://github.com/georgemouse)

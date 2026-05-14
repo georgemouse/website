@@ -8,4 +8,4 @@ description = 'My first post on this site.'
 
 Welcome to my site! This is my first post.
 
-I'll be writing about things I find interesting. Stay tuned.
+I'll be writing about things I find interesting.
