@@ -1,6 +1,6 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
-title = "My Site"
+title = "ShiShiun's Site"
 theme = "PaperMod"
 enableGitInfo = true
 
@@ -10,7 +10,7 @@ enableGitInfo = true
   pagerSize = 10
 
 [params]
-  author = "Your Name"
+  author = "ShiShiun Chen"
   description = "A personal site and blog"
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -22,12 +22,12 @@ enableGitInfo = true
   ShowLastMod = true
 
   [params.homeInfoParams]
-    Title = "Hi, I'm Your Name"
+    Title = "Hi, I'm ShiShiun Chen"
     Content = "Welcome to my site. I write about things I find interesting."
 
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/yourusername"
+    url = "https://github.com/georgemouse"
 
 [menu]
   [[menu.main]]
