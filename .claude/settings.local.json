@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(curl -L https://github.com/gohugoio/hugo/releases/download/v0.147.1/hugo_extended_0.147.1_linux-amd64.deb -o /tmp/hugo.deb)",
-      "Bash(sudo dpkg *)"
-    ]
-  }
-}
