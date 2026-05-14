@@ -2,6 +2,10 @@ baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "My Site"
 theme = "PaperMod"
+enableGitInfo = true
+
+[frontmatter]
+  lastmod = [":git", "lastmod", "date"]
 [pagination]
   pagerSize = 10
 
@@ -15,6 +19,7 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
+  ShowLastMod = true
 
   [params.homeInfoParams]
     Title = "Hi, I'm Your Name"
