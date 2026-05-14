@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(hugo *)",
+      "Bash(npm *)",
+      "Bash(bun *)",
+      "Bash(yarn *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(touch *)",
+      "Bash(chmod *)",
+      "Bash(curl *)",
+      "Read",
+      "Edit",
+      "Write"
+    ]
+  }
+}
