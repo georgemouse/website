@@ -4,6 +4,15 @@ title = "ShiShiun's Site"
 theme = "PaperMod"
 enableGitInfo = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'], ['\(', '\)']]
+
 [frontmatter]
   lastmod = [":git", "lastmod", "date"]
 [pagination]
