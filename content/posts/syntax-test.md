@@ -1,5 +1,5 @@
 +++
-date = '2026-05-24T18:11:24+08:00'
+date = '2026-05-24'
 draft = true
 title = 'Syntax Test'
 tags = ['test']
