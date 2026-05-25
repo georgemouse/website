@@ -1,0 +1,18 @@
+.code-block-with-title .highlight {
+    margin-top: 0;
+}
+
+.code-block-with-title .highlight pre {
+    border-radius: 0 0 6px 6px;
+    margin-top: 0;
+}
+
+.code-block-title {
+    background: var(--code-block-bg);
+    color: var(--secondary);
+    font-family: monospace;
+    font-size: 0.85em;
+    padding: 6px 14px;
+    border-bottom: 1px solid var(--border);
+    border-radius: 6px 6px 0 0;
+}

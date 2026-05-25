@@ -1,0 +1,10 @@
+{{- $title := .Attributes.title -}}
+{{- $result := transform.HighlightCodeBlock . -}}
+{{- if $title -}}
+<div class="code-block-with-title">
+  <div class="code-block-title">{{ $title }}</div>
+  {{ $result.Wrapped }}
+</div>
+{{- else -}}
+{{ $result.Wrapped }}
+{{- end -}}

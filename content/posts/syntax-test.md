@@ -86,6 +86,24 @@ Regular paragraph with a [link](https://example.com) and some text after it.
 
 ## Code Blocks
 
+### With Filename
+
+```bash {title="greet.sh"}
+#!/bin/bash
+echo "Hello, World!"
+for i in {1..5}; do
+  echo "Count: $i"
+done
+```
+
+```python {title="greet.py"}
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print(greet("World"))
+```
+
 ### Bash
 
 ```bash
