@@ -1,6 +1,6 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
-title = "ShiShiun's Site"
+title = "ShiShiun's Note"
 theme = "PaperMod"
 enableGitInfo = true
 
