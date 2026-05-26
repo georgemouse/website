@@ -43,6 +43,9 @@ enableGitInfo = true
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/georgemouse"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/shi-shiun-chen/"
 
 [menu]
   [[menu.main]]
