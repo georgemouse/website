@@ -4,6 +4,9 @@ title = "ShiShiun's Note"
 theme = "PaperMod"
 enableGitInfo = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -57,3 +60,8 @@ enableGitInfo = true
     name = "Tags"
     url = "/tags/"
     weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
