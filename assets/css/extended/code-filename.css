@@ -16,3 +16,13 @@
     border-bottom: 1px solid var(--border);
     border-radius: 6px 6px 0 0;
 }
+
+.post-content pre,
+.post-content pre code,
+.post-content .highlight pre,
+.post-content .highlight pre code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
