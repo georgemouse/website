@@ -1,4 +1,4 @@
 {
   "framework": "hugo",
-  "buildCommand": "git submodule update --init --recursive && hugo --gc --minify"
+  "buildCommand": "git submodule update --init --recursive --force && ls themes/PaperMod/layouts && hugo --gc --minify"
 }
