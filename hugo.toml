@@ -37,8 +37,8 @@ enableGitInfo = true
   ShowLastMod = true
 
   [params.homeInfoParams]
-    Title = "Hi, I'm ShiShiun Chen"
-    Content = "Welcome to my site. I write about things I find interesting."
+    Title = "ShiShiun's Note"
+    Content = "Notes about my life."
 
   [[params.socialIcons]]
     name = "github"
