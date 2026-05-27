@@ -1,3 +1,4 @@
 {
-  "framework": "hugo"
+  "framework": "hugo",
+  "buildCommand": "ls -la themes/PaperMod/ && find themes/PaperMod -name 'baseof.html' && hugo --gc --minify"
 }
