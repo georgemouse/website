@@ -1,7 +1,6 @@
 baseURL = "https://shishiun-site.vercel.app/"
 languageCode = "en-us"
 title = "ShiShiun's Note"
-theme = "PaperMod"
 enableGitInfo = true
 
 [outputs]
@@ -63,3 +62,7 @@ enableGitInfo = true
     name = "Search"
     url = "/search/"
     weight = 40
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
