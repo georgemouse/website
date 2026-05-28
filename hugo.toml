@@ -38,6 +38,13 @@ enableGitInfo = true
   ShowToc = true
   ShowLastMod = true
 
+  images = ["/og-default.png"]
+
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon32x32 = "/favicon-96x96.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
   [params.homeInfoParams]
     Title = "ShiShiun's Note"
     Content = "Notes about my life."
