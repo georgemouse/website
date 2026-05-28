@@ -18,6 +18,9 @@ enableGitInfo = true
           block = [['$$', '$$'], ['\[', '\]']]
           inline = [['$', '$'], ['\(', '\)']]
 
+[permalinks]
+  posts = "/:year/:month/:filename/"
+
 [frontmatter]
   lastmod = [":git", "lastmod", "date"]
 [pagination]
