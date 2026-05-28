@@ -19,7 +19,7 @@ enableGitInfo = true
           inline = [['$', '$'], ['\(', '\)']]
 
 [permalinks]
-  posts = "/:year/:month/:filename/"
+  posts = "/:year/:month/:contentbasename/"
 
 [frontmatter]
   lastmod = [":git", "lastmod", "date"]
