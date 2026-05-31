@@ -7,6 +7,11 @@ enableGitInfo = true
   home = ["HTML", "RSS", "JSON"]
 
 [markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "dracula"
   [markup.goldmark]
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
@@ -44,6 +49,8 @@ enableGitInfo = true
     favicon = "/favicon.ico"
     favicon32x32 = "/favicon-96x96.png"
     apple_touch_icon = "/apple-touch-icon.png"
+
+    disableHLJS = true
 
   [params.homeInfoParams]
     Title = "ShiShiun's Note"
