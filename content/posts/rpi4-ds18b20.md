@@ -106,19 +106,18 @@ cp w1-gpio-overlay.dts my-w1-gpio.dts
 
 對原內容做如下修改：
 
-1. 把 `gpios` 和 `brcm,pins` 的 pin number 從 4 改成 17
-2. (Optional) 把 node name 從 onewire 改成 my-onewire，方便下次開機後驗證載入的 DTO
-3. (Optional) 把 node name 的 unit address `@xxx` 去掉，避免編譯時出現下列 Warning
-```
-my-w1-gpio.dts:12.21-18.6: Warning (unit_address_vs_reg): /fragment@0/__overlay__/my-onewire@0: node has a unit name, but no reg or ranges property
-my-w1-gpio.dts:25.23-29.6: Warning (unit_address_vs_reg): /fragment@1/__overlay__/w1_pins@0: node has a unit name, but no reg or ranges property
-```
-4. (Optional) 把 gpios 的第三個屬性從 0 改成 6 ，目的是明確標示Pin的電氣特性，避免開機出現這樣的 Warning：
-```
-gpio-529 (onewire@0): enforced open drain 
-please flag it properly in DT/ACPI DSDT/board file
-```
-其中 6 是 `GPIO_OPEN_DRAIN` 的意思，可以查閱 [GPIO bindings header](https://github.com/torvalds/linux/blob/master/include/dt-bindings/gpio/gpio.h)
+1. 把 `gpios` 和 `brcm,pins` 的 pin number 從 4 改成 17。
+2. (Optional) 把 node name 從 onewire 改成 my-onewire，方便下次開機後驗證載入的 DTO。
+3. (Optional) 把 node name 的 unit address `@xxx` 去掉，避免編譯時出現下列 Warning：
+    ```
+    my-w1-gpio.dts:12.21-18.6: Warning (unit_address_vs_reg): /fragment@0/__overlay__/my-onewire@0: node has a unit name, but no reg or ranges property
+    my-w1-gpio.dts:25.23-29.6: Warning (unit_address_vs_reg): /fragment@1/__overlay__/w1_pins@0: node has a unit name, but no reg or ranges property
+    ```
+4. (Optional) 把 gpios 的第三個屬性從 0 改成 6 ， 6 是 `GPIO_OPEN_DRAIN` 的意思，可以查閱 [GPIO bindings header](https://github.com/torvalds/linux/blob/master/include/dt-bindings/gpio/gpio.h)。目的是明確標示Pin的電氣特性，避免開機出現這樣的 Warning：
+    ```
+    gpio-529 (onewire@0): enforced open drain 
+    please flag it properly in DT/ACPI DSDT/board file
+    ```
 5. (Optional) 刪去 `__overrides__` 區塊。這是讓 `config.txt` 支援參數修改（如 gpiopin=17）的機制，我們的 overlay 已經寫死 GPIO17，不需要這個彈性，所以可以刪去。
 
 修改的diff如下：
