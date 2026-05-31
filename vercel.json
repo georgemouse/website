@@ -1,3 +1,4 @@
 {
-  "framework": "hugo"
+  "framework": "hugo",
+  "buildCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then HUGO_BASEURL=\"https://${VERCEL_PROJECT_PRODUCTION_URL}/\" hugo; else HUGO_BASEURL=\"https://${VERCEL_URL}/\" hugo; fi"
 }
